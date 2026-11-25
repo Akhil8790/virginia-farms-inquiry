@@ -2,20 +2,32 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thank you – Virginia Farms Inc.</title>
 <link rel="icon" href="brand/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
 <style>
-  body{margin:0;font:16px/1.6 "Open Sans",sans-serif;color:#222;min-height:100vh;display:grid;place-items:center;text-align:center;
-       background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.6)),url(brand/hero.jpg) center/cover}
-  .card{background:#fff;border-top:5px solid #ED1C24;max-width:540px;margin:20px;padding:40px 36px;box-shadow:0 12px 40px rgba(0,0,0,.3)}
-  img{height:70px}
-  h1{margin:16px 0 6px;font-weight:800;text-transform:uppercase;font-size:26px}h1 b{color:#ED1C24}
-  p{font:italic 19px/1.5 "Sorts Mill Goudy",serif;color:#555;margin:0 0 24px}
-  a{display:inline-block;background:#ED1C24;color:#fff;text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:13px 26px}
-  a:hover{background:#c4141b}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;box-sizing:border-box;font:15px/1.55 Inter,system-ui,sans-serif;color:#1A1414;-webkit-font-smoothing:antialiased;
+       background:linear-gradient(160deg,rgba(26,8,8,.45),rgba(26,8,8,.85)),url(brand/hero.jpg) center/cover}
+  .card{background:#fff;border-radius:22px;max-width:480px;width:100%;padding:40px 36px;text-align:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+  .logo{height:50px}
+  .tick{width:64px;height:64px;margin:22px auto 6px;border-radius:50%;display:grid;place-items:center;background:#E8F8EE;animation:pop .5s cubic-bezier(.2,1.4,.4,1)}
+  @keyframes pop{from{transform:scale(.4);opacity:0}}
+  h1{font:600 30px/1.15 Fraunces,serif;margin:14px 0 8px}h1 em{color:#E11D2A;font-weight:500}
+  p{color:#6B6262;margin:0 0 26px}
+  ol{text-align:left;background:#F6F1EC;border-radius:14px;padding:16px 18px 16px 38px;margin:0 0 26px;font-size:14px}
+  ol li+li{margin-top:6px}
+  a.btn{display:inline-flex;gap:8px;align-items:center;background:#E11D2A;color:#fff;text-decoration:none;font-weight:600;border-radius:14px;padding:13px 22px;box-shadow:0 12px 24px -10px rgba(225,29,42,.7)}
+  a.btn:hover{background:#B9141F}
+  .alt{display:block;margin-top:14px;font-size:13px;color:#6B6262}
 </style></head>
 <body><div class="card">
-  <img src="brand/logo.png" alt="Virginia Farms Inc.">
-  <h1>Salamat! <b>Inquiry received.</b></h1>
-  <p>Our regional sales team will contact you within one business day.</p>
-  <a href="web-to-lead.html">Back to the form</a>
+  <img class="logo" src="brand/logo.png" alt="Virginia Farms Inc.">
+  <div class="tick"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+  <h1>Salamat! <em>Inquiry received.</em></h1>
+  <p>Your request is on its way to the Virginia Farms sales team for your region.</p>
+  <ol>
+    <li>Your regional sales rep reviews your needs.</li>
+    <li>We call you within one business day with pricing.</li>
+    <li>We set up your delivery schedule from the nearest Pork Shop.</li>
+  </ol>
+  <a class="btn" href="https://www.virginiafarmsinc.com/">Visit virginiafarmsinc.com</a>
+  <a class="alt" href="web-to-lead.html">Send another inquiry</a>
 </div></body></html>
